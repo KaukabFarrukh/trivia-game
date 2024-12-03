@@ -1,0 +1,243 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    background: linear-gradient(135deg, #74ebd5, #9face6); /* Soft blue gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;  
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .instructions, .game-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  
+  /* Header */
+  .header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    font-size: 36px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Login Form */
+  .login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 80px auto;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Game Interface */
+  .game-interface {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-interface h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .game-interface p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .game-interface button {
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .game-interface button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Instructions */
+  .instructions {
+    background-color: #12a8ce;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .instructions h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: green;
+    
+  }
+  
+  .instructions ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  
+  .instructions li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .instructions li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #2ecc71;
+  }
+
+  .instructions button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+  }
+
+  .instructions button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .instructions button:active {
+    background-color: #1d6fa5;
+  }
+
+  @media (max-width: 768px) {
+    .instructions {
+      padding: 20px;
+      margin: 15px;
+    }
+  
+    .instructions h3 {
+      font-size: 24px;
+    }
+  
+    .instructions li {
+      font-size: 16px;
+    }
+  
+    .instructions button {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+
+
+  /* Game Over Screen */
+.game-over {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-over h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .game-over button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .game-over button:hover {
+    background-color: #2980b9;
+  }
+  
+  
